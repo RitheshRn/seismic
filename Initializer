@@ -1,0 +1,28 @@
+def Initializer():
+    # set of string
+    pii = dict()
+    reference = dict()
+    ref_type = dict()
+
+    pii['Address'] = 0
+    reference[0] = dict()
+    ref_type[0] = 'Address'
+
+    pii['SSN'] = 1
+    reference[1] = dict()
+    ref_type[1] = 'SSN'
+
+    pii['Phone'] = 2
+    reference[2] = dict()
+    ref_type[2] = 'Phone'
+
+    pii['Email'] = 3
+    reference[3] = dict()
+    ref_type[3] = 'Email'
+
+    pii['UserName'] = 4
+    reference[4] = dict()
+    ref_type[4] = 'UserName'
+    
+    reference_counters = [0]*len(pii)
+    return pii, reference, ref_type, reference_counters
